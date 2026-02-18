@@ -1,5 +1,6 @@
 # Kalman Filter
-Kalman Filters are used for state estimation in control systems when noisy measurements are present. This repository includes an implementation of the algorithm in Python and also a Jupyter Notebook for testing in real data for altitude estimation of a quadrotor. The algorithm was applied in the quad using a sensor-fusion technique by blending the measurements from the barometric pressure sensor and the accelerometer to provide altitude (relative height of the quad) estimation. 
+<p align="justify ">
+Kalman Filters are used for state estimation in control systems when noisy measurements are present. This repository includes an implementation of the algorithm in Python and also a Jupyter Notebook for testing in real data for altitude estimation of a quadrotor. The algorithm was applied in the quad using a sensor-fusion technique by blending the measurements from the barometric pressure sensor and the accelerometer to provide altitude (relative height of the quad) estimation. </p>
 
 ## Kalman Algorithm
 
@@ -40,3 +41,15 @@ The matrices and vectors in the above equations are defined as follows:
 - $`R_k`$: Measurement noise covariance matrix at time step $`k`$
 - $`z_k`$: Measurement vector at time step $`k`$
 - $`I`$: Identity matrix
+
+## First results on real signals
+Tested Kalman Filter (KF) in IMU measurements from a real quadcopter vehicle. </br> 
+
+The following results demonstrate the sensor fusion algorithm: Barometric Pressure Sensor + Accelerometer from the IMU unit
+
+<i>Note: further tuning is needed</i>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/3cae28e8-0072-457d-8fef-bcfc4b139f74" width="75%">
+</p>
+
